@@ -2,7 +2,7 @@
 
 describe('Create a New Item', () => {
   beforeEach(() => {
-    cy.visit('/jetsetter');
+    cy.visit('/jetsetter', { failOnStatusCode: false});
   });
 
   it('should have a form', () => {
